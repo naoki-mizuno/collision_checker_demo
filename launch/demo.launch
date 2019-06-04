@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+  <node pkg="collision_checker_demo" type="demo.py" name="collision_checker_demo" output="screen" >
+    <rosparam command="load" file="$(find collision_checker_demo)/config/params.yaml" />
+  </node>
+
+  <node pkg="collision_checker" type="collision_checker_node" name="collision_checker" >
+  </node>
+
+  <node name="map_server" pkg="map_server" type="map_server"
+        args="$(find collision_checker_demo)/maps/map.yaml" >
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find collision_checker_demo)/rviz/view.rviz" />
+</launch>
