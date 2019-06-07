@@ -4,7 +4,7 @@
     <rosparam command="load" file="$(find collision_checker_demo)/config/params.yaml" />
   </node>
 
-  <node pkg="collision_checker" type="collision_checker_node" name="collision_checker" >
+  <node pkg="collision_checker" type="collision_checker_node" name="collision_checker" output="screen" >
   </node>
 
   <node name="map_server" pkg="map_server" type="map_server"
