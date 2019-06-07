@@ -1,6 +1,8 @@
 # collision_checker_demo
 
-collision_checker_demo package.
+Demo for the
+[`collision_checker`](https://github.com/naoki-mizuno/collision_checker)
+package.
 
 ## How to use
 
